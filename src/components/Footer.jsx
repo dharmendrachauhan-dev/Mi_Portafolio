@@ -25,7 +25,7 @@ function Footer() {
         </div>
 
         <div className="flex gap-2">
-          <Link target="_blank" to="mailto:dmma359800@gmail.com">
+          <Link target="_blank" to="https://discord.com/users/dharmendra2000">
             <div className="transition-all size-8 border-orange-400 bg-orange-400 hover:bg-white hover:border-zinc-500  dark:border-orange-500 dark:hover:border-white dark:hover:bg-white dark:bg-orange-500 border-2 rounded items-center justify-center flex">
               <img
                 src={mail}
