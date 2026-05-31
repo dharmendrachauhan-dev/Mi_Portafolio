@@ -15,7 +15,7 @@ function Home() {
         <motion.h1
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
+          transition={{ duration: 0.7, delay: 0.2 }}
           viewport={{ once: true }}
           className="flex px-4 items-center gap-1.5 text-2xl tracking-tight font-bold "
         >
