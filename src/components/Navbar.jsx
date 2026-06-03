@@ -26,6 +26,7 @@ function Navbar() {
   const navLinks = [
     { id: 'home', label: 'Home', path: '/' },
     { id: 'project', label: 'Project', path: '/project' },
+    { id: 'about', label: 'About', path: '/about' },
   ];
 
   // For Navbar
@@ -48,7 +49,7 @@ function Navbar() {
       className="sticky top-0 max-w-7xl flex justify-between h-20 py-10 items-center px-4
       border-b-2 border-b-orange-400 rounded-xl backdrop-blur-xl z-20 mx-auto">
       <div className="text-xl font-semibold cursor-pointer text-orange-400">
-        <Link to='/'> Dharmendra </Link>
+        <Link to='/'> Developer </Link>
       </div>
 
       {/* For Desktop */}
@@ -100,15 +101,15 @@ function Navbar() {
       <div className="flex gap-4">
         <button onClick={toggleButton}>
           {dark ? (
-            <Moon strokeWidth={1.25} className="text-orange-500" />
+            <Moon strokeWidth={1.50} size={35} className="text-yellow-400" />
           ) : (
-            <Sun strokeWidth={1.25} className="text-orange-500" />
+            <Sun strokeWidth={1.50} size={35} className="text-yellow-400" />
           )}
         </button>
         <button
           ref={btnRef}
           onClick={handleButton}
-          className="md:hidden flex flex-col justify-center items-center active:scale-98 px-1 gap-2 cursor-pointer border bg-white/90 rounded-xl size-12"
+          className="md:hidden flex flex-col justify-center items-center active:scale-98 px-1 gap-2 cursor-pointer border bg-white/90 rounded-xl size-10"
           style={{ transition: "transform 0.3s cubic-bezier(0.4,0,0.2,1)" }}
         >
           <span
