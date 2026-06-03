@@ -47,8 +47,8 @@ function Navbar() {
   return (
     <nav
       className="sticky top-0 max-w-7xl flex justify-between h-20 py-10 items-center px-4
-      border-b-2 border-b-orange-400 rounded-xl backdrop-blur-xl z-20 mx-auto">
-      <div className="text-xl font-semibold cursor-pointer text-orange-400">
+      border-b-2 border-b-purple-500 rounded-xl backdrop-blur-xl z-20 mx-auto">
+      <div className="text-xl font-semibold cursor-pointer text-purple-500">
         <Link to='/'> Developer </Link>
       </div>
 
@@ -75,11 +75,11 @@ function Navbar() {
 
       <div
         className={`
-    overflow-hidden transition-all duration-300 ease-in-out w-full md:hidden absolute top-full left-0
-    ${isOpen ? "max-h-96 opacity-100 translate-y-0" : "max-h-0 opacity-0 -translate-y-5"}
+    overflow-hidden transition-all duration-300 ease-in-out w-full md:hidden absolute top-full left-0 
+    ${isOpen ? "max-h-96 bg-white dark:bg-slate-900 opacity-100 translate-y-0" : "max-h-0 opacity-0 -translate-y-5"}
   `}
       >
-        <div className='w-full flex flex-col justify-center items-center border-2 py-4 rounded-xl md:hidden dark:bg-slate-900'>
+        <div className='w-full flex flex-col justify-center items-center border-2 py-4 dark:border-purple-500 rounded-xl md:hidden dark:bg-slate-900'>
           {navLinks.map((item) => (
             <NavLink
               key={item.id}

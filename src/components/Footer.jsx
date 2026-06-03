@@ -9,7 +9,7 @@ import { motion } from 'motion/react';
 function Footer() {
   return (
     <div
-      className="max-w-5xl mx-auto border-t-2 border-t-orange-400 h-full"
+      className="max-w-7xl mx-auto border-t-2 border-t-purple-500 rounded-xl  h-full"
     >
       <motion.div
       initial={{ opacity: 0, x: -30 }}
