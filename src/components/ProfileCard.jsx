@@ -7,8 +7,8 @@ import dharmendraImg from '../assets/icon/dharmendra.jpg';
 // ==========================================
 const PROFILE_DATA = {
   aboutMeTag: "About Me",
-  heading: "Get a website that will make a lasting impression on your audience!!!",
-  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
+  heading: "Build a powerful backend that runs your application smoothly and scales with your users.",
+  description: "From secure APIs and authentication to database management and server logic, I create reliable backend systems that deliver fast performance and seamless user experiences.",
   avatarUrl: dharmendraImg, // Replace with your actual image path
   contactDetails: [
     { label: "Name:", value: "Dharmendra Chauhan" },
@@ -51,7 +51,7 @@ export default function ProfileCard() {
           
           {/* "About Me" Badge */}
           <div>
-            <span className="px-4 py-1.5 border border-zinc-700 dark:border-white dark:text-white rounded-full text-xs font-medium tracking-wide text-zinc-800 bg-zinc-900/50">
+            <span className="px-4 py-1.5 border bg-yellow-500 dark:border-white dark:text-white rounded-full text-xs font-medium tracking-wide text-zinc-800 dark:bg-zinc-900/50">
               {PROFILE_DATA.aboutMeTag}
             </span>
           </div>

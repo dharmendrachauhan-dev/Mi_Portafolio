@@ -27,6 +27,7 @@ function Navbar() {
     { id: 'home', label: 'Home', path: '/' },
     { id: 'project', label: 'Project', path: '/project' },
     { id: 'about', label: 'About', path: '/about' },
+    { id: 'blog', label: 'Blog', path: '/blog' },
   ];
 
   // For Navbar
@@ -109,16 +110,16 @@ function Navbar() {
         <button
           ref={btnRef}
           onClick={handleButton}
-          className="md:hidden flex flex-col justify-center items-center active:scale-98 px-1 gap-2 cursor-pointer border bg-white/90 rounded-xl size-10"
+          className="md:hidden flex flex-col justify-center items-center active:scale-98 px-1 gap-2 cursor-pointer border  dark:bg-purple-500 bg-purple-500 rounded-xl size-10"
           style={{ transition: "transform 0.3s cubic-bezier(0.4,0,0.2,1)" }}
         >
           <span
             className={barBase}
             style={{
               transition: isOpen
-                ? "transform 0.2s ease 0.35s"
+                ? "transform 0.2s ease 0.35s "
                 : "transform 0.2s ease",
-              transform: isOpen ? "translateY(10px) rotate(45deg)" : "",
+              transform: isOpen ? "translateY(10px) rotate(45deg) " : "",
             }}
           />
           <span
@@ -135,7 +136,7 @@ function Navbar() {
             className={barBase}
             style={{
               transition: isOpen
-                ? "transform 0.2s ease 0.35s"
+                ? "transform 0.2s ease 0.35s "
                 : "transform 0.2s ease",
               transform: isOpen ? "translateY(-10px) rotate(-45deg)" : "",
             }}

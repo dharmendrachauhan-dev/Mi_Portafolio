@@ -4,6 +4,7 @@ import Project from './components/Project.jsx';
 import { Toaster } from 'react-hot-toast';
 import Layout from './Layout.jsx';
 import ProfileCard from './components/ProfileCard.jsx';
+import BlogPost from './blog/BlogPost.jsx';
 // import Hamburger from './ui/Hamburger.jsx';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/project" element={<Project />} />
           <Route path="/about" element={<ProfileCard />} />
+          <Route path="/blog" element={<BlogPost />} />
         </Route>
       </Routes>
     </div>
