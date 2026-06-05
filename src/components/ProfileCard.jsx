@@ -11,9 +11,9 @@ const PROFILE_DATA = {
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
   avatarUrl: dharmendraImg, // Replace with your actual image path
   contactDetails: [
-    { label: "Name:", value: "Saira Karim" },
-    { label: "Phone:", value: "+(234) 567-8910" },
-    { label: "Email:", value: "example@domain.com" },
+    { label: "Name:", value: "Dharmendra Chauhan" },
+    { label: "Phone:", value: "+91 9967758893" },
+    { label: "Email:", value: "dmma359800@gmail.com" },
     { label: "Twitter:", value: "Sairakarim0011" },
   ],
   buttons: {
@@ -94,7 +94,7 @@ export default function ProfileCard() {
             {/* Secondary Action Button */}
             <a 
               href={PROFILE_DATA.buttons.secondary.link}
-              className="inline-flex items-center gap-2 dark:border-white dark:text-zinc-300 border border-zinc-700 hover:border-zinc-500 hover:bg-zinc-900/50 text-zinc-800 hover:text-white text-sm font-semibold px-6 py-3 rounded-full transition-all duration-200"
+              className="inline-flex items-center gap-2 dark:border-white dark:text-zinc-300 border border-zinc-700 hover:border-zinc-500 hover:bg-yellow-500 text-zinc-800 hover:text-white text-sm font-semibold px-6 py-3 rounded-full transition-all duration-400"
             >
               {PROFILE_DATA.buttons.secondary.text}
               <Download className="w-4 h-4 text-purple-500" />

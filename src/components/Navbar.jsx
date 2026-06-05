@@ -61,7 +61,7 @@ function Navbar() {
             to={item.path}
             className={({ isActive }) => {
               if (isActive) {
-                return 'border-b-2 text-orange-400 border-slate-200';
+                return 'border-b-2 text-yellow-400 border-slate-200';
               }
               return 'dark:text-white';
             }}
