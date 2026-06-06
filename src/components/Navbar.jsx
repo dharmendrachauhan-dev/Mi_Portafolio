@@ -24,10 +24,11 @@ function Navbar() {
   };
 
   const navLinks = [
-    { id: 'home', label: 'Home', path: '/' },
-    { id: 'project', label: 'Project', path: '/project' },
+    { id: 'home', label: 'Development Toolkit', path: '/' },
+    { id: 'portfolio', label: 'Portfolio', path: '/portfolio' },
     { id: 'about', label: 'About', path: '/about' },
     { id: 'blog', label: 'Blog', path: '/blog' },
+    { id: 'learn', label: 'Learn', path: '/learn' },
   ];
 
   // For Navbar
@@ -110,7 +111,7 @@ function Navbar() {
         <button
           ref={btnRef}
           onClick={handleButton}
-          className="md:hidden flex flex-col justify-center items-center active:scale-98 px-1 gap-2 cursor-pointer border  dark:bg-purple-500 bg-purple-500 rounded-xl size-10"
+          className="md:hidden flex scale-105 transition-all flex-col justify-center items-center active:scale-98 px-1 gap-2 cursor-pointer border  dark:bg-purple-500 bg-purple-500 rounded size-10"
           style={{ transition: "transform 0.3s cubic-bezier(0.4,0,0.2,1)" }}
         >
           <span

@@ -7,14 +7,14 @@ import dharmendraImg from '../assets/icon/dharmendra.jpg';
 // ==========================================
 const PROFILE_DATA = {
   aboutMeTag: "About Me",
-  heading: "Build a powerful backend that runs your application smoothly and scales with your users.",
+  heading: "Passionate Backend Developer & AI Enthusiast crafting scalable APIs, intelligent systems, and seamless digital experiences that power modern applications.",
   description: "From secure APIs and authentication to database management and server logic, I create reliable backend systems that deliver fast performance and seamless user experiences.",
-  avatarUrl: dharmendraImg, // Replace with your actual image path
+  avatarUrl: dharmendraImg,
   contactDetails: [
     { label: "Name:", value: "Dharmendra Chauhan" },
-    { label: "Phone:", value: "+91 9967758893" },
-    { label: "Email:", value: "dmma359800@gmail.com" },
-    { label: "Twitter:", value: "Sairakarim0011" },
+    { label: "Phone:", value: "+91 9967758893", href: "tel:+919967758893"},
+    { label: "Email:", value: "dmma359800@gmail.com", href: "mailto:dmma359800@gmail.com" },
+    { label: "Twitter:", value: "dharmchauhanji", href: "https://x.com/dharmchauhanji" },
   ],
   buttons: {
     primary: { text: "Contact me", link: "#contact" },
@@ -73,8 +73,18 @@ export default function ProfileCard() {
                 <span className="text-yellow-500 text-xs font-semibold uppercase tracking-wider">
                   {info.label}
                 </span>
-                <span className="text-zinc-800 dark:text-white text-sm sm:text-base">
-                  {info.value}
+                <span
+                className="text-zinc-800 dark:text-white text-sm sm:text-base">
+                  {info.href ? (
+                    <a 
+                    href={info.href}
+                    className='hover:underline duration-300 hover:text-purple-500'
+                    >
+                      {info.value}
+                    </a>
+                  ): (
+                    info.value
+                  )}
                 </span>
               </div>
             ))}

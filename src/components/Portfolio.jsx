@@ -3,7 +3,7 @@ import ProjectData from '../Data/Project_Card_Data/ProjectData.js';
 import { motion } from 'motion/react';
 import ProjectIcon from './ProjectIcon.jsx';
 
-function Project() {
+function Portfolio() {
   return (
     <div className="max-w-5xl mx-auto">
       <div>
@@ -26,4 +26,4 @@ function Project() {
   );
 }
 
-export default Project;
+export default Portfolio;
