@@ -6,6 +6,7 @@ import ProfileCard from './components/ProfileCard.jsx';
 import BlogPost from './blog/BlogPost.jsx';
 import Learn from './components/Learn.jsx';
 import Portfolio from './components/Portfolio.jsx';
+import DevelopmentToolkit from './components/DevelopmentToolkit.jsx';
 // import Hamburger from './ui/Hamburger.jsx';
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
       {/* <Hamburger/> */}
       <Routes>
         <Route element={<Layout/>}>
-          <Route path="/" element={<Home />} />
+          <Route path="/development-toolkit" element={<DevelopmentToolkit />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/about" element={<ProfileCard />} />
           <Route path="/blog" element={<BlogPost />} />

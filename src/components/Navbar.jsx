@@ -24,7 +24,7 @@ function Navbar() {
   };
 
   const navLinks = [
-    { id: 'home', label: 'Development Toolkit', path: '/' },
+    { id: 'development-toolkit', label: 'Development Toolkit', path: '/development-toolkit' },
     { id: 'portfolio', label: 'Portfolio', path: '/portfolio' },
     { id: 'about', label: 'About', path: '/about' },
     { id: 'blog', label: 'Blog', path: '/blog' },

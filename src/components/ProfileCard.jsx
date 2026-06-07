@@ -7,7 +7,7 @@ import dharmendraImg from '../assets/icon/dharmendra.jpg';
 // ==========================================
 const PROFILE_DATA = {
   aboutMeTag: "About Me",
-  heading: "Passionate Backend Developer & AI Enthusiast crafting scalable APIs, intelligent systems, and seamless digital experiences that power modern applications.",
+  heading: "Passionate Backend Developer & AI Enthusiast",
   description: "From secure APIs and authentication to database management and server logic, I create reliable backend systems that deliver fast performance and seamless user experiences.",
   avatarUrl: dharmendraImg,
   contactDetails: [
