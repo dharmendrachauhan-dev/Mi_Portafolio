@@ -11,11 +11,7 @@ function Footer() {
     <div
       className="max-w-7xl mx-auto border-t-2 border-t-purple-500 rounded-xl  h-full"
     >
-      <motion.div
-      initial={{ opacity: 0, x: -30 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.6, delay: 0.2 }}
-      viewport={{ once: true }}
+      <div
       className="flex md:flex-row md:justify-between justify-center items-center flex-col gap-2 p-8">
         <div className="md:flex md:gap-0.5 font-semibold text-yellow-400 text-center">
           <p className="flex justify-center items-center gap-0.5">
@@ -53,7 +49,7 @@ function Footer() {
             </div>
           </Link>
         </div>
-      </motion.div>
+      </div>
     </div>
   );
 }

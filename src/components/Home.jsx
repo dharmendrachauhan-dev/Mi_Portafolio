@@ -12,21 +12,13 @@ function Home() {
   return (
     <>
       <div className="h-1/2 mt-10 mb-6 text-gray-700/90 dark:bg-slate-900 dark:text-white px-4 sm:px-12 lg:px-24 xl:px-65">
-        <motion.h1
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.2 }}
-          viewport={{ once: true }}
+        <h1 
           className="flex px-4 items-center gap-1.5 text-2xl tracking-tight font-bold "
         >
           <BadgeAlert strokeWidth={2} size={50} />
           About me
-        </motion.h1>
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, delay: 0.3 }}
-          viewport={{ once: true }}
+        </h1>
+        <div
           className="mt-10 text-xl px-4 italic"
         >
           <p>
@@ -49,34 +41,26 @@ function Home() {
             learn new skills. I believe in the power of collaboration and strive
             to contribute positively to any team I am part of.
           </p>
-        </motion.div>
+        </div>
       </div>
 
       <div className="h-1/2 px-4 sm:px-12 lg:px-24 xl:px-65">
-        <motion.h1
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          viewport={{ once: true }}
+        <h1
           className="dark:text-white flex justify-center py-4 items-center gap-2 font-bold text-2xl tracking-wider text-gray-700/90"
         >
           <Settings className="spin" size={45} strokeWidth={2.5} /> Tools And
           Technologies
-        </motion.h1>
+        </h1>
         <div>
           <SkillCard />
         </div>
         <div>
-          <motion.h2
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
-            viewport={{ once: true }}
+          <h2
             className="dark:text-white pt-10 flex justify-center py-4 items-center gap-2 font-bold text-2xl tracking-wider text-gray-700/90"
           >
             <MessageCircleMore size={40} strokeWidth={2.5} />
             Drop A Message
-          </motion.h2>
+          </h2>
           <Contact />
         </div>
       </div>
